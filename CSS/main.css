@@ -2,6 +2,16 @@
   font-family: "Playfair Display", serif;
 }
 
+/* HEADER */
+
+#logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  display: inline;
+  padding: 4px;
+}
+
 ul {
   list-style: none;
   padding-left: 0px;
@@ -11,6 +21,14 @@ a {
   color: black;
 }
 
+/* MAIN */
+
 .main-img {
-  width: 150%;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 2rem;
+  border-top: 2px solid black;
 }
