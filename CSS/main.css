@@ -1,0 +1,16 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  color: black;
+}
+
+.main-img {
+  width: 150%;
+}
