@@ -27,18 +27,39 @@
       </nav>
     </header>
     <main>
-      <h1>Contact Me</h1>
+      <!-- The code of the form was inspired by the code in the following link: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
       <h2>Hi, contact me if you have any questions or ideas!</h2>
-      <h3>Your Name:</h3>
-      <p id="name">Jane Doe</p>
-      <h3>Your email adress:</h4>
-      <p id="email">jane.doe@gmail.com</p>
-      <h3>Your message/question:</h5>
-      <p id="message">Don't be afraid, ask me anything!</p>
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Jane" />
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Doe" />
+
+          <label for="email">Your email:</label>
+          <input
+            type="text"
+            id="email"
+            name="Your email"
+            placeholder="jane.doe@gmail.com"
+          />
+
+          <label for="subject">Message/Question:</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
 
     <footer>
-        <p>©️ Zora Pintér-Portfolio 2025</p>
-      </footer>
+      <p>©️ Zora Pintér-Portfolio 2025</p>
+    </footer>
   </body>
 </html>
