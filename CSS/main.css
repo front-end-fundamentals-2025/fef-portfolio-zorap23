@@ -4,11 +4,17 @@
 
 /* HEADER */
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 #logo {
   font-weight: 700;
   font-size: 1.5rem;
   display: inline;
-  padding: 4px;
+  padding: 1px;
+  width: 200px;
 }
 
 h1 {
@@ -27,12 +33,34 @@ h3 {
 }
 
 ul {
+  display: flex;
   list-style: none;
   padding-left: 0px;
 }
 
+li {
+  margin-left: 4rem;
+}
+
 a {
   color: black;
+}
+
+@media screen and (max-width: 540px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  li {
+    margin-left: 0;
+  }
+
+  ul {
+    margin-top: 0;
+    gap: 1rem;
+  }
 }
 
 /* MAIN */
@@ -41,8 +69,10 @@ a {
   width: 100%;
 }
 
-p {
-  width: 400px;
+@media screen and (max-width: 540px) {
+  p {
+    align-items: start;
+  }
 }
 
 /* MY PROJECTS */
@@ -51,9 +81,51 @@ figure {
   margin-left: 0;
 }
 .project-img {
-  width: 30%;
+  width: 100%;
 }
 
+@media screen and (min-width: 540px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* DETAILS PAGE */
+
+.restaurant-img {
+  width: 96%;
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.restaurant-img2 {
+  width: 100%;
+}
+
+.restaurant-img3 {
+  width: 100%;
+}
+
+.restaurant-img4 {
+  width: 100%;
+}
+
+@media screen and (min-width: 540px) {
+  .branding-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* CONTACT */
 
 /* The following code for the formatting of the code was inspired by the following website: https://www.w3schools.com/howto/howto_css_contact_form.asp */
@@ -67,7 +139,7 @@ textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
 }
 
 /* Submit button style */
@@ -80,9 +152,8 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #463523;
 }
 
 /* Add a background color and some padding around the form */
