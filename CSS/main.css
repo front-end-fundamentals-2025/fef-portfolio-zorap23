@@ -71,16 +71,15 @@ body {
 
 /* DIV -  heart animation */
 
-/* Heart Shape */
 .heart {
   position: relative;
   width: 100px;
   height: 100px;
-  background-color: rgb(152, 74, 74); /* Heart color */
+  background-color: rgb(152, 74, 74);
   margin-left: 70px;
   margin-top: 80px;
   transform: rotate(-45deg); /* Keep heart upright */
-  transition: transform 0.2s ease-in-out; /* Smooth transition */
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Top Circles */
@@ -90,9 +89,8 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-
-  border-radius: 50%; /* Make the before and after elements circular */
-  background-color: rgb(152, 74, 74); /* Same heart color */
+  border-radius: 50%;
+  background-color: rgb(152, 74, 74);
 }
 
 .heart:before {
